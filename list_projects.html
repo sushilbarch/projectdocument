@@ -1,0 +1,13 @@
+
+<!doctype html>
+<html>
+<head><title>List of Projects</title></head>
+<body>
+<h1>Projects</h1>
+<ul>
+{% for project in projects %}
+  <li><a href="/project/{{ project }}">{{ project }}</a> - <a href="/download_project/{{ project }}">Download</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
